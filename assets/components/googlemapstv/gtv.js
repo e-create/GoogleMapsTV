@@ -119,7 +119,7 @@ var GTV = function() {
             return v === null || v === undefined || ((GTV.isArray(v) && !v.length));
         }
         ,isArray: function(v) {
-            return toString.apply(v) === '[object Array]';
+            return Object.prototype.toString.call(o) === '[object Array]';
         }
         
         ,handleNoFlash: function(errorCode) {
